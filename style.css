@@ -171,17 +171,25 @@
     display: flex;
     justify-content: right;
     text-align: right;
+    align-items: right;
     padding-right: 10%;
 }
 
 .gamer-description {
     width: 50%;
+    text-align: right;
+}
+
+.gamer-description p {
+    width: 100%;
 }
 
 .gamer-description p {
     color: #534C64;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: right;
+
 }
 
 .gamer-description button {
@@ -201,9 +209,11 @@
     margin-bottom: 30px;
     width: 100%;
 }
-.games-title p{
+
+.games-title p {
     width: 100%;
 }
+
 .games-cards {
     display: flex;
     gap: 10px;
@@ -218,26 +228,35 @@
 .card img {
     width: 250px;
 }
-.funnny-video div img{
+
+.funnny-video div img {
     width: 30px;
     height: 30px;
 }
-.funnny-video div{
+
+.funnny-video div {
     text-align: center;
 }
-.funnny-video div h4{
+
+.funnny-video div h4 {
     color: #F948B2;
     margin: 10px;
 }
-.games-card-container .funnny-video{
-    width: 250px;
-    height: 292px;
-    background-image: url('./images/Rectangle\ 7.png');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+
+.funny-card {
+    position: relative;
+    display: inline-block;
+}
+
+.funny-card .funnny-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.funny-card p {
+    margin-top: 20px;
 }
 
 /* online games section end */
@@ -250,9 +269,11 @@
     height: 500px;
     padding-right: 5%;
 }
-.play-section2{
+
+.play-section2 {
     margin: 50px;
 }
+
 .play-description {
     width: 50%;
     height: 100%;
@@ -262,15 +283,19 @@
     align-items: center;
     text-align: right;
 }
-.play-details{
+
+.play-details {
     text-align: left;
 }
-.play-img .photo{
+
+.play-img .photo {
     text-align: right;
 }
-.play-details  h3, p{
+
+.play-details h3,
+p {
     width: 280px;
-    
+
 }
 
 
@@ -303,6 +328,7 @@ p {
     width: 250px;
     height: 280px;
 }
+
 .play-container-img .img2 {
     margin-top: -230px;
     margin-right: -100px;
@@ -312,25 +338,30 @@ p {
 
 /*play section end */
 /* Careers-section styles start */
- .Careers-section{
+.Careers-section {
     color: white;
     background-image: url('./images/Group\ 14.png');
     background-color: #FF42A5;
     margin-top: 100px;
- }
- .careers-container-description{
-    margin-left: 40px ;
- }
- .careers-container-description h1{
+}
+
+.careers-container-description {
+    margin-left: 40px;
+}
+
+.careers-container-description h1 {
     font-size: 40px;
+    margin-top: 40px;
     margin: 20px 0px;
- }
- .careers-container-description p{
+    width: 100%;
+}
+
+.careers-container-description p {
     color: rgb(236, 233, 233);
     width: 100%;
- }
+}
 
- .careers-container-details button{
+.careers-container-details button {
     border: none;
     padding: 10px 20px;
     background-color: white;
@@ -338,43 +369,52 @@ p {
     border-radius: 20px;
     margin-top: 30px;
 
- }
- .careers-container{
+}
+
+.careers-container {
     display: flex;
- }
- .careers-container-details{
+}
+
+.careers-container-details {
     width: 50%;
- }
- .careers-container-img{
+}
+
+.careers-container-img {
     width: 50%;
- }
- .careers-container-img img{
+}
+
+.careers-container-img img {
     width: 100%;
- }
- .careers-container-list{
+}
+
+.careers-container-list {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
- }
- .careers-container-list li{
+}
+
+.careers-container-list li {
     font-size: 18px;
     padding: 5px 0px;
- }
- .careers-container-list-1{
+}
+
+.careers-container-list-1 {
     text-align: left;
- }
- .careers-container-list-2{
+}
+
+.careers-container-list-2 {
     text-align: right;
- }
+}
+
 /* Careers-section styles end */
 /* buttons section styles  start*/
-.button-section{
+.button-section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .button-container {
-   
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -388,74 +428,86 @@ p {
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
-    max-width: 300px;
-    padding-left: 10px;
+    padding: 5px 10px;
+    width: max-content;
 }
-.button-container .button img{
+
+.button-container .button img {
     width: 50px;
     height: 50px;
 }
+
 .button-container .button:hover {
     border: 1px solid #FF42A5;
     border-radius: 30px;
     color: #FF42A5;
-    
 }
-.button-container  .button{
+
+.button-container .button {
     font-size: 18px;
 }
+
 /* buttons section styles end */
 
 /*footer section styles start */
 
-.footer-container{
+.footer-container {
     background-color: #0B0223;
     color: white;
     text-align: center;
     padding: 60px 0px;
     margin-top: 50px;
 }
-.footer-container-logo{
+
+.footer-container-logo {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
     align-items: center;
     gap: 5px;
 }
-.footer-container-logo img{
-      width: 65px;
+
+.footer-container-logo img {
+    width: 65px;
 }
-.footer-container-logo span{
+
+.footer-container-logo span {
     color: #F948B2;
-} 
-.footer-container-list ul{
+}
+
+.footer-container-list ul {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
     padding-bottom: 20px;
 }
-li{
+
+li {
     list-style-type: none;
 }
-.footer-container-icons .icon{
+
+.footer-container-icons .icon {
     margin: 5px 20px;
     background-color: white;
-    
+
 }
-.footer-container-list2 ul{
+
+.footer-container-list2 ul {
     display: flex;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
     color: gray;
     padding-top: 20px;
 }
-.last-text{
+
+.last-text {
     display: flex;
     justify-content: center;
     color: gray;
     padding-top: 20px;
 }
+
 /*footer section end */
 /* small device responsive styles */
 
@@ -469,13 +521,27 @@ li{
         flex-direction: column;
     }
 
+    .navbar-section,
+    .banner-section,
+    .Gamer-section,
+    .Online-games-section,
+    .play-section,
+    .play-section2,
+    .Careers-section,
+    .button-section,
+    .footer-section {
+        width: 538px;
+        margin: 0px;
+    }
+
     .navbar-section {
         width: 538px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .play-container2{
+
+    .play-container2 {
         flex-direction: column-reverse;
         margin-top: 200px;
         width: 538px;
@@ -498,8 +564,7 @@ li{
     }
 
     .banner-text-and-btn {
-        width: 100%;
-        background-image: url('./images/Group\ 14.png');
+        width: 538px;
     }
 
     .baner-text {
@@ -512,17 +577,22 @@ li{
         padding-left: 0px;
     }
 
-    .gamer-container ,
-    .footer-container{
+    .gamer-container,
+    .footer-container {
         width: 538px;
     }
-    .Careers-section{
+
+    .Careers-section {
         width: 538px;
+        margin-top: 50px;
     }
-    .careers-container{
+
+    .careers-container {
         flex-direction: column;
     }
-    .careers-container-details , .careers-container-img{
+
+    .careers-container-details,
+    .careers-container-img {
         width: 100%;
     }
 
@@ -533,13 +603,18 @@ li{
     .gamer-description {
         width: 100%;
     }
-     .online-games-container .games-title{
+
+    .online-games-container .games-title {
         width: 538px;
-     }
+    }
+
     .games-card-container {
-        width: 100%;
+        width: 538px;
         display: flex;
         justify-content: center;
+    }
+    .games-card-container p{
+      width: 100%;
     }
 
     .card {
@@ -549,10 +624,6 @@ li{
 
     .card img {
         width: 100%;
-    }
-
-    .games-card-container {
-        width: 538px;
     }
 
     .play-section {
@@ -571,51 +642,67 @@ li{
         margin-left: -50px;
     }
 
-    .play-description h3, p {
+    .play-description h3,
+    p {
         text-align: center;
         margin-bottom: 20px;
     }
-   .footer-container-list ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   }
-   .footer-container-icons{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 20%;
-   }
-   .footer-container-icons .icon{
-    margin: 20px 0px;
-   }
-   .footer-container-list2 ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 20px;
-    
-   }
-   .button-section{
-    width: 538px;
 
-   }
-   .button-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    justify-content: center;
-   }
-   .button-container button{
-    max-width: 175px;
-    font-size: 2px ;
-   
+    .careers-container-list li{
+        font-size: 16px;
+    }
+    .careers-container-list{
+        margin-right:10px;
+    }
+    .careers-container-description p{
+       text-align: left;
+    }
 
-   }
-   .button-container .button img{
-    width: 25px;
-    height: 25px;
-}
-  .button-container .button {
-    font-size: 13px;
-}
+    .button-section {
+        width: 538px;
+
+    }
+
+    .button-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        justify-content: center;
+    }
+
+    .button-container button {
+        padding: 0px 5px;
+    }
+
+    .button-container .button img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .button-container button span {
+       font-size: 13px;
+    }
+    .footer-container-list ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20%;
+    }
+
+    .footer-container-icons .icon {
+        margin: 20px 0px;
+    }
+
+    .footer-container-list2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+
+    }
 
 }
 
@@ -624,14 +711,16 @@ li{
     .nav-container {
         margin: 0px;
     }
-
+    .navbar-buttons-container{
+        width: 80%;
+    }
     .gamer-description {
         width: 80%;
     }
-
+    
     .games-cards {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto auto;
         align-items: center;
     }
 
@@ -649,18 +738,32 @@ li{
     p {
         text-align: center;
     }
-    .button-container{
+
+    .button-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .button-container .button img{
+
+    .button-container .button img {
         width: 30px;
         height: 30px;
     }
+
     .button-container .button {
         font-size: 15px;
     }
-    .Careers-section{
+
+    .Careers-section {
         padding-bottom: 30px;
     }
+    .careers-container{
+        align-items: center;
+    }
+    .careers-container-description p{
+        text-align: left;
+    }
+    .careers-container-list li{
+        font-size: 15px;
+    }
+
 }
